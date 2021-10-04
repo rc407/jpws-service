@@ -41,5 +41,5 @@ The following ports are exposed to the host:
 
   In this dashboard you can see metrics and logging, for example:
 
-    * [Dashboard](https://github.com/rc407/jpws-service/blob/main/vagrant/jpws/images/JPWS_dashboard.png)
-    * [Logging showing cache hit or missed](https://github.com/rc407/jpws-service/blob/main/vagrant/jpws/images/JPWS_logging.png)
+  * [Dashboard](https://github.com/rc407/jpws-service/blob/main/vagrant/jpws/images/JPWS_dashboard.png)
+  * [Logging showing cache hit or missed](https://github.com/rc407/jpws-service/blob/main/vagrant/jpws/images/JPWS_logging.png)
