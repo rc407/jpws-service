@@ -1,0 +1,5 @@
+flask
+prometheus_flask_exporter
+waitress
+requests
+redis
