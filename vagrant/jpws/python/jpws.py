@@ -76,7 +76,13 @@ def handle_error(e):
     timestamp = strftime('[%Y-%b-%d %H:%M]')
     logging.error('%s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path)
     logging.error(e)
-    return jsonify(error="Internal Server error."), 500
+    if isinstance(e, HTTPException):
+        code = e.code
+        msg = str(e)
+    else:
+        code = 500
+        msg = "Internal Server error"
+    return jsonify(error=msg), code
 
 if __name__ == "__main__":
     from waitress import serve

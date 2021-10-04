@@ -43,3 +43,10 @@ The following ports are exposed to the host:
 
   * [Dashboard](https://github.com/rc407/jpws-service/blob/main/vagrant/jpws/images/JPWS_dashboard.png)
   * [Logging showing cache hit or missed](https://github.com/rc407/jpws-service/blob/main/vagrant/jpws/images/JPWS_logging.png)
+
+  ## To do list:
+
+  * Terraform version to provision in AWS
+  * Use Docker hub and CircleCI platform
+  * Refactor code and add unit testing 
+  * Versioning
