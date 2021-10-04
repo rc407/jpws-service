@@ -7,7 +7,7 @@ In order to run it please install:
   * [VirtualBox 6.1.0+](https://www.virtualbox.org/)
 
 ## Features and technology stack:
-  * Nomad - Manages different services/jobs inclusing the jpws.nomad job
+  * Nomad - Manages different services/jobs including the jpws.nomad job
   * Consul - Provides service discovery
   * Redis - In Memory caching
   * Prometheus - Collects metrics from targets by scraping metrics HTTP endpoint
