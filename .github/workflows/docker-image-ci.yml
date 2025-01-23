@@ -20,7 +20,7 @@ jobs:
       
   apply:
     name: "Terraform Apply"
-    runs_on: self-hosted
+    runs-on: self-hosted
     environment: "Dev"
 
     steps:
