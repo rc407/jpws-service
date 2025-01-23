@@ -9,11 +9,21 @@ on:
 jobs:
 
   build:
-
+    name: "Docker Build"
     runs-on: self-hosted
-
+    
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       working-directory: ./vagrant/jpws/python
       run: docker build . --file Dockerfile --tag jpws:${{github.run_number}}
+      
+  apply:
+    name: "Terraform Apply"
+    runs_on: self-hosted
+    environment: "Dev"
+
+    steps:
+    - name: Run Terraform Apply
+      run: echo "Run terraform apply"
+    
