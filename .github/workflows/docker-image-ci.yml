@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      working-directory: ./jpws-service/jpws-service/vagrant/jpws/python
+      working-directory: ./vagrant/jpws/python
       run: docker build . --file Dockerfile --tag jpws:$(date +%s)
