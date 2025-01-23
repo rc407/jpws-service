@@ -1,4 +1,4 @@
-# Try hitting the cache and load from file if its not there
+# JP API
 import logging, requests, redis , os 
 from flask.helpers import make_response
 from flask import Flask, jsonify, request, Response, abort
